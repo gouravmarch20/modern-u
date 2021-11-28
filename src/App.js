@@ -1,5 +1,4 @@
 import React from 'react'
-// ! blog , feature
 import {
   Footer,
   Blog,
@@ -9,6 +8,7 @@ import {
   Header
 } from './containers'
 import { Brand, CTA, Navbar } from './components'
+import './App.css'
 
 const App = () => {
   return (
