@@ -1,6 +1,6 @@
 import React from 'react'
-import  './feature.css'
-const Feature = () => {
+import  './footer.css'
+const Footer = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Feature = () => {
     )
 }
 
-export default Feature
+export default Footer
