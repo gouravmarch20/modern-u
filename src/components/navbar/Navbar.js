@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
-import logo from '../../assets/logo.png'
+import logo from '../../logo.svg'
+
 import './navbar.css'
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
+
   return (
     <div className='gpt3__navbar'>
       <div className='gpt3__navbar-links'>
         <div className='gpt3__navbar-links_logo'>
-          <img src={logo} alt='lgo' />
+          {/* <img src={logo} /> */}
         </div>
         <div className='gpt3__navbar-links_container'>
           <p>
@@ -32,8 +35,7 @@ const Navbar = () => {
         <p>Sign in</p>
         <button type='button'>Sign up</button>
       </div>
-      {/* toggle feature  */}
-      <div className='gtp3__navbar-menu'>
+      <div className='gpt3__navbar-menu'>
         {toggleMenu ? (
           <RiCloseLine
             color='#fff'
@@ -47,7 +49,6 @@ const Navbar = () => {
             onClick={() => setToggleMenu(true)}
           />
         )}
-        {/* what to diaplay in toggle  */}
         {toggleMenu && (
           <div className='gpt3__navbar-menu_container scale-up-center'>
             <div className='gpt3__navbar-menu_container-links'>
